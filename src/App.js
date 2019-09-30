@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "./components/Header";
-import CreateTask from './components/Createtask';
-import Todolist from './components/Todolist';
+import Component1 from './components/Component1';
+import Component2 from './components/Component2';
 import './App.css'
 
 
@@ -10,8 +10,8 @@ class App extends React.Component {
     return (
       <div>
       <Header/>
-      <CreateTask/>
-       <Todolist/>
+       <Component1/>
+       <Component2/>
        </div>
      );
   }

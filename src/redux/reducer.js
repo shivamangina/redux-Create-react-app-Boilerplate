@@ -1,6 +1,8 @@
 import {combineReducers} from 'redux'
 
-const initialState =["appklr","mango","grapes"]
+const initialState = {
+    data:"data from store"
+}
 
 const taskReducer = (state = initialState, { type, payload }) => {
 
@@ -8,10 +10,9 @@ const taskReducer = (state = initialState, { type, payload }) => {
     switch (type) {
 
     case "ADD_TASK":
-        return [...state,payload]
+        return {...state,payload}
     case "DEL_TASK":
-        state.splice(payload,1)
-        return [...state]
+        return {...state}
 
     default:
         return state    
